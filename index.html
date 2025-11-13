@@ -576,6 +576,15 @@
 </head>
 <body>
     <h1>悅城公務車預約系統</h1>
+
+    <ul id="carReservationsList"></ul>
+
+    <h3>轎車短期當下使用區（點擊格子立即切換狀態）</h3>
+    <table>
+        <tr>
+            <td id="4351-M5" data-type="car" class="green" onclick="toggleColor(this)">4351-M5</td>
+        </tr>
+    </table>
     <div>
         <h2>👨‍👩‍👦 預約公務車</h2>
 
@@ -605,16 +614,6 @@
     <label for="carSelect">選擇車輛:</label>
     <select id="carSelect"></select>
     <button onclick="reserveCar()">預約轎車</button>
-
-    <ul id="carReservationsList"></ul>
-
-    <h3>轎車短期當下使用區（點擊格子立即切換狀態）</h3>
-    <table>
-        <tr>
-            <td id="4351-M5" data-type="car" class="green" onclick="toggleColor(this)">4351-M5</td>
-        </tr>
-    </table>
-
     <h3>紀錄檢視</h3>
     <label for="carNumberInput">搜尋預約:</label>
     <input type="text" id="carNumberInput" value="">
